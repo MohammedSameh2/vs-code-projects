@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shrimp Butterfly Order</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+          <div class="upper-section">
+            <h1>SHRIMP BUTTERFLY</h1>
+            <p class="desc">
+              Delicately butterflied shrimp, marinated in a blend of olive oil, fresh lemon juice, and aromatic herbs, then grilled over an open flame until tender and succulent. Each bite bursts with savory garlic flavor, enhanced by a touch of sea salt and cracked pepper
+            </p>
+          </div>
+          <div class="lower-section">
+            <div class="order-options">
+              <div class="section">
+                <h2>SIZE</h2>
+                <label><input type="radio" name="size" value="120"> SMALL <span>120 EGP</span></label>
+                <label><input type="radio" name="size" value="250" checked> MEDIUM <span>250 EGP</span></label>
+                <label><input type="radio" name="size" value="320"> LARGE <span>320 EGP</span></label>
+              </div>
+              <div class="section">
+                <h2>SIDES</h2>
+                <label><input type="checkbox" name="side" value="50"> FRIES <span>+50 EGP</span></label>
+                <label><input type="checkbox" name="side" value="50"> SALAD <span>+50 EGP</span></label>
+                <label><input type="checkbox" name="side" value="70"> RICE <span>+70 EGP</span></label>
+              </div>
+            </div>
+            <div class="order-summary">
+              <div class="customize">
+                <h2>CUSTOMIZE YOUR ORDER</h2>
+                <textarea placeholder="Any special requests"></textarea>
+              </div>
+              <div class="total-row">
+                <div class="total-label">
+                  <h2>TOTAL</h2>
+                  <span id="total">0 EGP</span>
+                </div>
+              </div>
+              <div class="cart-section">
+                <div class="cart-area">
+                  <div class="cart-controls">
+                    <button class="cart-button">
+                      ADD TO CART <span class="cart-icon">🛒</span>
+                    </button>
+                    <div class="counter-area">
+                      <button class="quantity-arrow up">▲</button>
+                      <div class="counter-box">
+                        <span id="quantity">0</span>
+                      </div>
+                      <button class="quantity-arrow down">▼</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-panel">
+          <img src="C:\Users\aline\OneDrive\Desktop\2nd term\hana\sameh\image\shrimpButter.jpg" alt="Shrimp Butterfly" class="dish-img">
+        </div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>

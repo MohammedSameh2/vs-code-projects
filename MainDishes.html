@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="cat">
+    <div class="nav-container">
+      <nav class="top-nav">
+        <a href="home_page.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active-link">Menu</a>
+        <a href="Page_Book" class="nav-link">Book</a>
+        <a href="aboutus.html" class="nav-link">About us</a>
+      </nav>
+        <h1 class="brand-name">BASHA EL BALAD</h1>
+      </div>
+      <div class="breadcrumb">
+        <a href="home_page.html">Home</a> / <a href="menu.html">Menu</a> / <a href="MainDishes.html">Sea food</a>
+    </div>
+    <div class="menu-container">
+
+      <div class="menu-item ">
+        <a href="Shrimp Butterfly.html">
+          <img src="image/shrimpButter.jpg" alt="Shrimp Butterfly">
+        </a>
+        <!-- <div class="counter">
+            <button onclick="numOrder('+')">+</button>
+            <output class="rz" id="result" >0</output>
+            <button onclick="numOrder('-')">-</button>
+        </div> -->
+          <div class="menu-info">
+              <h3>Shrimp Butterfly</h3>
+              <p>Delicately butterflied shrimp, marinated in a blend of olive oil, fresh lemon juice, and aromatic herbs, then grilled over an open flame until tender and succulent. Each bite bursts with savory garlic flavor, enhanced by a touch of sea salt and cracked pepper.</p>
+              
+          </div>
+          <div class="menu-price">460 EGP</div>
+      </div>
+
+      <div class="menu-item ">
+          <img src="image/calamari.jpg" alt="Fried calamari">
+          <div class="counter">
+            <button onclick="numOrder('+')">+</button>
+            <output class="rz" id="result" >0</output>
+            <button onclick="numOrder('-')">-</button>
+        </div>
+          <div class="menu-info">
+              <h3>Fried Calamari</h3>
+              <p>Indulge in a rich, exquisite taste that melts in your mouth, perfectly balanced with a smooth, creamy dipping sauce crafted from fresh herbs and a touch of tangy lemon. Each bite delivers a delightful hint of garlic, enhancing the savory depth of flavor.</p>
+              
+          </div>
+          <div class="menu-price">320 EGP</div>
+      </div>
+
+      <div class="menu-item ">
+          <img src="image/clams.jpg" alt="clams">
+          <div class="counter">
+            <button onclick="numOrder('+')">+</button>
+            <output class="rz" id="result" >0</output>
+            <button onclick="numOrder('-')">-</button>
+        </div>
+          <div class="menu-info">
+              <h3>Steamed Clams</h3>
+              <p>Try this Steamed Clams with Garlic, Lemon & Parsley! A simple Mediterranean dish that is bursting with fresh flavors. Perfect with crusty bread for soaking up the savory broth!</p>
+              
+          </div>
+          <div class="menu-price">60 EGP</div>
+      </div>
+  
+          
+          
+      </div>
+      <script>
+        function numOrder(operator){
+count=document.getElementById('result').value;
+
+  switch (operator) {
+    case '+':
+      count++;
+      break;
+      case '-':
+      if (count==0) {
+       break;
+      }
+        count--;
+        break;
+      }
+    
+      document.getElementById('result').value = count;
+}
+      </script>
+
+</body>
+</html>
