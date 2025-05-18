@@ -8,6 +8,7 @@ const downArrow = document.querySelector('.quantity-arrow.down');
 const cartButton = document.querySelector('.cart-button');
 
 let quantity = 1;
+quantityDisplay.textContent = quantity; // Set initial display to 1
 
 // Initial calculation
 function calculateTotal() {
@@ -33,10 +34,9 @@ function incrementQuantity() {
 
 // Quantity controls
 upArrow.addEventListener('click', incrementQuantity);
-cartButton.addEventListener('click', incrementQuantity);
 
 downArrow.addEventListener('click', () => {
-  if (quantity > 0) {
+  if (quantity > 1) { // Changed from 0 to 1
     quantity--;
     quantityDisplay.textContent = quantity;
     calculateTotal();
@@ -49,3 +49,20 @@ sideCheckboxes.forEach(box => box.addEventListener('change', calculateTotal));
 
 // Initial call
 calculateTotal();
+
+// Cart popup functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const cartButton = document.querySelector('.cart-button');
+    const popup = document.getElementById('cartPopup');
+
+    cartButton.addEventListener('click', function() {
+        // Show the popup
+        popup.style.display = 'flex';
+        
+        // Add animation
+        popup.style.opacity = '0';
+        setTimeout(() => {
+            popup.style.opacity = '1';
+        }, 10);
+    });
+});
