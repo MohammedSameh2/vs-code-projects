@@ -956,6 +956,7 @@ contact  page */
             width: 40%;
             padding: 40px;
             background: #fff;
+            margin-bottom: 70px;
         }
 
         .contactForm h2 {
@@ -1048,9 +1049,7 @@ contact  page */
                 width: 100%;
             }
 
-            .container .contactInfo .box .text a:link {
-                color: #ffffff;
-            }
+            
         }
 
 
