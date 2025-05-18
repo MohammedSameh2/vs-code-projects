@@ -6,8 +6,8 @@
 }
 
 .home {
-  background: url("image/Backgroundhome2.png")no-repeat center ;
-  background-size:cover;
+  background: url("image/Backgroundhome2.png") no-repeat center;
+  background-size: cover;
   color: white;
   height: 100vh;
   overflow: hidden;
