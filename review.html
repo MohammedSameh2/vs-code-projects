@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            review page
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body class="body_review" >
+       <div class="nav-container">
+      <nav class="top-nav">
+        <a href="home_page.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+      <a href="review.html" class="nav-link active-link">Reviews</a>
+      <a href="contact.html" class="nav-link ">Contact Us</a>
+        <a href="aboutus.html" class="nav-link">About us</a>
+      </nav>
+      <h1 class="brand-name">BASHA EL BALAD</h1>
+    </div>
+        <div class="container_review">
+            <div class="review-form">
+         <h2>Write a Review</h2>
+          <label for="rating">Your Rating:</label>
+          <select id="rating">
+            <option value="5">★★★★★ - Excellent</option>
+            <option value="4">★★★★☆ - Very Good</option>
+            <option value="3">★★★☆☆ - Good</option>
+            <option value="2">★★☆☆☆ - Fair</option>
+            <option value="1">★☆☆☆☆ - Poor</option>
+          </select>
+    
+          <label for="aboutwhat"> about what?</label>
+          <textarea id="aboutwhat" placeholder="review about what?..."></textarea>
+          <label for="comment">Your Review:</label>
+          <textarea id="comment" placeholder="Write your review here..."></textarea>
+    
+    
+          <button onclick="submitReview()">Submit Review</button>
+
+          <h3 id="reviews">Customer Reviews</h3>
+          <!-- Reviews will appear here -->
+            </div>
+        </div>
+        <script src="review.js"></script>
+         
+    </body>
+</html>
