@@ -22,7 +22,7 @@
     </div>
     
     <section class="contact">
-        <div class="container">
+        <div class="ccontainer">
             <div class="contactInfo">
                 <div class="box">
                     <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -42,30 +42,33 @@
                     </div>
                 </div>
                 <div class="box">
-                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="icon"><i class="fa fa-envelope" ></i>
                     </div>
 
                     <div class="text">
                         <h3>Email</h3>
-                        <p>contact@bashaelbalad.com </p>
+                       <a href="mailto:contact@bashaelbalad.com" style="color: white;">contact@bashaelbalad.com</a>
                     </div>
                 </div>
             </div>
-            <div class="contactForm">
-                <form id="contact-form">
+            <div class="contactForm slide-up">
+                <form >
                     <h2>Send Message</h2>
-                    <div id="email-error" class="error-message">Please enter a valid email address.</div>
+                   
                     <div class="inputBox">
-                        <input type="text" name="name" id="name" required="required">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputBox" id="email-input-box">
-                        <input type="text" name="email" id="email" required="required">
-                        <span>Email</span>
+                        <label for= "name">Full Name</span>
+                        <input type="text" name="name"  required="required">
+                        
                     </div>
                     <div class="inputBox">
-                        <textarea name="message" id="message" required="required"></textarea>
-                        <span>Type your Message...</span>
+                     <label for="email">Email</label>
+                        <input type="email" name="email"  required="required">
+                        
+                    </div>
+                    <div class="inputBox">
+                          <label for="message">Type your Message...</label>
+                        <input name="message"  required="required"></input>
+                      
                     </div>
                     
                     <div class="inputBox">
@@ -75,42 +78,6 @@
             </div>
         </div>
     </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const emailInput = document.getElementById('email');
-            const emailError = document.getElementById('email-error');
-            const emailInputBox = document.getElementById('email-input-box');
-            
-            // Function to validate email format
-            function validateEmail(email) {
-    return email.includes('@') && email.indexOf('.', email.indexOf('@')) > email.indexOf('@');
-}
-            
-            // Event listener for email input field
-            emailInput.addEventListener('blur', validateEmailField);
-            emailInput.addEventListener('input', function() {
-                if (emailInputBox.classList.contains('error')) {
-                    validateEmailField();
-                }
-            });
-            
-            function validateEmailField() {
-                const email = emailInput.value.trim();
-                
-                if (email === '' || !validateEmail(email)) {
-                    emailError.style.display = 'block';
-                    emailInputBox.classList.add('error');
-                    return false;
-                } else {
-                    emailError.style.display = 'none';
-                    emailInputBox.classList.remove('error');
-                    return true;
-                }
-            }
-            
-        });
-    </script>
 </body>
 
 
